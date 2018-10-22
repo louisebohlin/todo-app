@@ -1,6 +1,7 @@
 import React from "react"
 import Item from "./item/item.js"
 import NewItem from "./new-item/new-item.js"
+import "./../index.css"
 
 class App extends React.Component {
   constructor(props) {
@@ -46,18 +47,20 @@ class App extends React.Component {
 
     render() {
       return (
-        <div>
-          <h1>To do App</h1>
-          <NewItem onSubmit={this.handleNewItem} />
-          {this.state.items.map((item, index) => (
-            <Item
-              index={index}
-              key={item.id}
-              text={item.text}
-              done={item.done}
-              whenChecked={this.handleChecked}
-              removeToDo={this.handleRemove} />
-          ))}
+        <div className="container">
+          <div className="todo-form">
+            <h1>Things to do</h1>
+            <NewItem onSubmit={this.handleNewItem} />
+            {this.state.items.map((item, index) => (
+              <Item
+                index={index}
+                key={item.id}
+                text={item.text}
+                done={item.done}
+                whenChecked={this.handleChecked}
+                removeToDo={this.handleRemove} />
+            ))}
+          </div>
         </div>
       )
     }
