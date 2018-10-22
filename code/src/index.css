@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #fadbd6;
+  background-image: linear-gradient(to right, lightpink, papayawhip);
 }
 
 .item-div input[type="checkbox"] {
@@ -15,10 +15,15 @@ body {
 }
 
 .todo-form {
-  width: 70%;
+  width: 50%;
+  height: auto;
+  margin: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ECEBE9;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px darkgrey;
 }
 
 input {
