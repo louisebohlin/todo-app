@@ -18,7 +18,7 @@ class Item extends React.Component {
                 checked={this.props.done}
                 onChange={this.handleChangeOnCheck} />
               {this.props.text}
-              <button onClick={this.handleRemoveToDo}>Remove</button>
+              <button onClick={this.handleRemoveToDo}>Done</button>
             </label>
           </form>
         </div>

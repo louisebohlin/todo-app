@@ -31,4 +31,5 @@ class NewItem extends React.Component {
       )
     }
 }
+
 export default NewItem
